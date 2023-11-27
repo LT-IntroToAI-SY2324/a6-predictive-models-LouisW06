@@ -11,14 +11,25 @@ y = data["Blood Pressure"].values
 x = x.reshape(-1,1)
 
 # Create the model
-
+plt.figure(figsize=(12,8))
+plt.scatter(x,y)
+plt.xlabel("Age")
+plt.ylabel("Blood Pressure")
+plt.title("Average blood pressure ")
 # Find the coefficient, bias, and r squared values. 
 # Each should be a float and rounded to two decimal places. 
-
+model = LinearRegression().fit(x, y)
+coef = round(float(model.coef_), 2)
+intercept = round(float(model.intercept_), 2)
+r_squared = model.score(x, y)
 
 # Print out the linear equation and r squared value
-
+print(f"Model's Linear Equation: y = {coef}x + {intercept}")
+print(f"R Squared value: {r_squared}")
 # Predict the the blood pressure of someone who is 43 years old.
 # Print out the prediction
-
+x_predict = 43
+prediction = model.predict([[x_predict]])
+print(f"Prediction when x is {x_predict}: {prediction}")
 # Create the model in matplotlib and include the line of best fit
+plt.plot(x, coef*x + intercept, c="r", label="Line of Best Fit")
