@@ -10,7 +10,7 @@ y = data.target.values
 data = data.frame
 # print(data)
 x = data["bmi"].values
-
+ 
 x = x.reshape(-1, 1)
 
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .10)
