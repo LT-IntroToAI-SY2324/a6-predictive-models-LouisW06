@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-
+ 
 data = pd.read_csv("part1-linear-regression/blood_pressure_data.csv")
 x = data["Age"].values
 y = data["Blood Pressure"].values
@@ -28,7 +28,6 @@ print(f"R Squared value: {r_squared}")
 x_predict = 43
 prediction = model.predict([[x_predict]])
 print(f"Prediction when x is {x_predict}: {prediction}")
-
 plt.figure(figsize=(12,8))
 plt.scatter(x,y)
 plt.xlabel("Age")

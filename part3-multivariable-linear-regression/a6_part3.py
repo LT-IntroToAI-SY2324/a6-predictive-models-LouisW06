@@ -14,8 +14,8 @@ y = data["Price"].values
 
 #Find and print the coefficients, intercept, and r squared values. 
 #Each should be rounded to two decimal places. 
-
-
+  
+  
 #Loop through the data and print out the predicted prices and the 
 #actual prices
 print("***************")
