@@ -17,7 +17,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size = .10)
 
 # Create the model
 model = LinearRegression().fit(xtrain, ytrain)
-
+  
 # get the coef_, intercept_ valuesm and r^2 values
 # use float() to turn the arrays into a single float value
 coef = round(float(model.coef_), 2)

@@ -26,7 +26,7 @@ xtrain = xtrain.reshape(-1,1)
 # Print out the linear equation and r squared value:
 
 '''
-**********TEST THE MODEL**********
+**********TEST THE MODEL***********
 '''
 # reshape the xtest data into a 2D array
 
