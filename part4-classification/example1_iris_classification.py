@@ -33,6 +33,7 @@ print(y_test)
 for index in range(len(x_test)):
     x = x_test[index]
     x = x.reshape(-1, 4)
+    print(x)
     y_pred = int(model.predict(x))
 
     if y_pred == 0:
