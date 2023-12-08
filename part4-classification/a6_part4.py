@@ -33,15 +33,15 @@ for index in range(len(x_test)):
     y_pred = int(model.predict(x))
 
     if y_pred == 0:
-        y_pred = "Male"
+        y_pred = "Not purchased"
     else:
-        y_pred = "Female"
+        y_pred = "Purchased"
 
     
     actual = y_test[index]
     if actual == 0:
-        actual = "Male"
+        actual = "Not purchased"
     else:
-        actual = "Female"
-    print("Predicted gender: " + y_pred + " Actual gender: " + actual)
+        actual = "Purchased"
+    print("Prediction: " + y_pred + " Actual: " + actual)
     print("")
