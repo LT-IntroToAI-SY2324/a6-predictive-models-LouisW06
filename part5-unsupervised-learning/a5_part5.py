@@ -8,7 +8,7 @@ from sklearn.datasets import make_circles
 data = pd.read_csv("part5-unsupervised-learning/customer_data.csv")
 x = data[["Annual Income", "Spending Score"]]
 
-x, y = make_circles()
+#x, y = make_circles()
 #standardize the data
 x_std = StandardScaler().fit_transform(x)
 
