@@ -6,7 +6,7 @@ After completing `a6_part3.py` answer the following questions
 
 1. What is the R Squared coefficient for your model? What does that mean about the model in relation to your data?
 
-NOT FINISHED YET
+
 
 2. Is your model accurate? Why or why not?
 
